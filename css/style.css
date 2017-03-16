@@ -27,6 +27,7 @@ body
 h2
 {
 	align-self: center;
+	text-align: center;
 	font-size: 3em;
 	font-weight: bold;
 }
@@ -382,6 +383,34 @@ nav a
 	flex: 2;
 }
 
+/* ######### Reviews ######### */
+#reviews {
+	background: #051626;
+}
+
+#reviews-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.review
+{
+	max-width: 50%;
+	padding: auto;
+}
+
+@media screen and (max-width: 720px)
+{
+	#reviews-container
+	{
+		flex-direction: column;
+	}
+	.review
+	{
+		max-width: 100%;
+	}
+}
 
 /* ######### Events ######### */
 #events
@@ -447,7 +476,7 @@ nav a
 /* ######### Contact ######### */
 #contact 
 {
-	background: #051626;
+	background: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -568,3 +597,4 @@ footer a:hover
 {
 	color: #0e3d6a;
 }
+
